@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>André Costa · Selected Work</title>
-<meta name="viewport" content="width=1280" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -513,6 +513,39 @@
   }
   .work-hero-lede em { font-style: italic; color: var(--ink); }
   .work-plates { padding: 56px 80px 80px; }
+
+  /* ============================================================
+     Responsive — tablet & mobile
+     ============================================================ */
+  @media (max-width: 900px) {
+    .topbar-inner { grid-template-columns: 1fr auto; padding: 11px 24px; gap: 16px; }
+    .tb-clock { display: none; }
+    .tb-links { gap: 18px; }
+
+    .section-bar { padding: 16px 28px; }
+
+    .work-hero { padding: 24px 28px 36px; }
+    .work-hero h1 { font-size: 64px; }
+    .work-hero-lede { font-size: 19px; max-width: none; }
+    .work-plates { padding: 40px 28px 56px; }
+
+    .footer { grid-template-columns: 1fr; gap: 14px; }
+    .footer .colophon, .footer .right { text-align: left; }
+  }
+
+  @media (max-width: 560px) {
+    .topbar-inner { grid-template-columns: 1fr; gap: 10px; justify-items: start; }
+    .tb-links { justify-content: flex-start; gap: 16px; }
+
+    .hero-meta-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .hero-meta-row .r { gap: 16px; }
+
+    .section-bar { grid-template-columns: 1fr; gap: 5px; }
+    .section-bar .c { display: none; }
+    .section-bar .r { text-align: left; }
+
+    .work-hero h1 { font-size: 44px; }
+  }
 </style>
 </head>
 <body>

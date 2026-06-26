@@ -290,3 +290,19 @@
 }
 
 body.lb-locked { overflow: hidden; }
+
+/* ============================================================
+   Responsive — mobile lightbox chrome
+   ============================================================ */
+@media (max-width: 560px) {
+  .lb { padding: 14px; }
+  .lb-close { top: 10px; right: 10px; width: 40px; height: 40px; }
+  .lb-prev { left: 10px; top: auto; bottom: 10px; transform: none; width: 40px; height: 40px; }
+  .lb-next { right: 10px; top: auto; bottom: 10px; transform: none; width: 40px; height: 40px; }
+  .lb-count { left: 14px; top: 18px; }
+  .lb-card { max-height: 88vh; }
+  .lb-figure { aspect-ratio: 4 / 3; }
+  .lb-body { padding: 28px 22px 22px; }
+  .lb-body h2 { font-size: 27px; }
+  .lb-meta { grid-template-columns: 84px 1fr; }
+}
